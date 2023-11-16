@@ -23,7 +23,35 @@
 /* Test:
  * 
  */
+import java.util.HashMap;
+import java.util.Map;
 
 class SolutionOne {
-    
+    public static void main(String[] args) {
+        int[] test1 = new int[]{2, 2, 1, 1, 5};
+        int[] test2 = new int[]{4}; 
+        System.out.println(singleNum(test1)); //5
+        System.out.println(singleNum(test2)); //4
+    }
+
+    public static int singleNum(int []  nums) {
+        int solution = 0;
+        if (nums.length == 1 ) {
+            return nums[0];
+        }
+        // HashMap to store all K (nums[i]) : V (appearance count)
+        HashMap<Integer, Integer> numsMap = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++){
+            numsMap.put(nums[i], numsMap.getOrDefault(nums[i], 0)+1);
+        }
+
+        // Get all of the K:V pairs, Check if value = 1
+        for (Map.Entry<Integer, Integer> entry : numsMap.entrySet()) {
+            if (entry.getValue() == 1) {
+                solution = entry.getKey();
+            }
+        }
+        return solution;
+    }
 }
