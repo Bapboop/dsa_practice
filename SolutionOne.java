@@ -13,8 +13,11 @@
 * Outputs: 1
 */ 
 
-/* Approach
-* 
+/* Approach:
+*  Iterate through the list.
+*  Store the key (nums[i]) and the value (count of appearances).
+*  At the end, return int that only has appeared once.  (Iterate through hashmap and find value = 1)
+*  If length = 1, return nums[0].
 */
 
 /* Test:
@@ -22,4 +25,5 @@
  */
 
 class SolutionOne {
+    
 }
