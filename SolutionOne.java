@@ -5,8 +5,13 @@
 */
 
 /* Examples
-* 
-*/
+*  Inputs: [1, 1, 2, 3, 3, 4, 4]
+*  Output: 2
+*
+* (If there is only one item in the array)
+* Inputs: [1]
+* Outputs: 1
+*/ 
 
 /* Approach
 * 
