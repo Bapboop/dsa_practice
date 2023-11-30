@@ -15,9 +15,11 @@
  */
 
 /* 
- *  Summarize: Given two strings (ransomNote & magazine), ransomNote must be 
+ *  Summarize: We're provided with two strings (ransomNote & magazine), ransomNote must be 
  *  able to be constructed from the letters of magazine (Letters in magazine can only be used once.)
  * 
+ *  Example: ransomNote = "money", magazine = "aobmcendyp" => True
+ *  ransomNote = "money", magazine = "xyz" => False
  */
 public class RansomNote {
     
