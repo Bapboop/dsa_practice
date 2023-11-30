@@ -20,7 +20,24 @@
  * 
  *  Example: ransomNote = "money", magazine = "aobmcendyp" => True
  *  ransomNote = "money", magazine = "xyz" => False
+ * 
+ *  Approach: map all elements of ransomNote to a HashMap. Map all elements of magazine to a HashMap.
+ *  Loop through ransomNote hashmap & check if K:V in ransomNote matches K:V in magazine (K = char, V = count).
  */
+
 public class RansomNote {
-    
+    public static void main(String args[]) {
+        String magazine_1 = "apblcedh";
+        String ransomNote_1 = "help";
+        System.out.println(canConstruct(ransomNote_1, magazine_1)); // true
+
+        String magazine_2 = "xyz";
+        String ransomNote_2 = "money";
+        System.out.println(canConstruct(ransomNote_2, magazine_2)); // false
+    };
+
+    public static boolean canConstruct(String ransomNote, String magazine) {
+
+        return true;
+    };
 }
